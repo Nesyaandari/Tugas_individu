@@ -12,10 +12,10 @@
     <div class="teras">
         <div class="container-teras">
             <div class="taman">
-                <img src="gambarku.jpeg" alt="Gambar Utama" width="230" />
+                <img src="gambarku.jpg" alt="Gambar Utama" width="230" />
             </div>
             <div class="kolam">
-
+                <button onclick="tampilkanPesan()">Klik Saya</button>
             </div>
             <div class="parkiran">
 
@@ -32,6 +32,20 @@
         <div class="dapur">
 
         </div>
+    </div>
+
+    <!-- Tambahan JavaScript -->
+    <script>
+        function tampilkanPesan() {
+            alert("Halo! Ini adalah interaksi JavaScript sederhana.");
+        }
+
+        // Contoh: manipulasi DOM
+        document.addEventListener("DOMContentLoaded", function () {
+            const dapur = document.querySelector(".dapur");
+            dapur.innerHTML = "<p>Dapur ini diisi lewat JavaScript!</p>";
+        });
+    </script>
 </body>
 
 </html>

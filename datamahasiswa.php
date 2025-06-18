@@ -40,6 +40,8 @@ $rows = query($query);
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
+    
+    <a href="tambahdata.php"> <button style="margin-bottom:12px; background-color:red;">Tambah Data </button></a>
     <table border="1" cellpadding="10" cellspacing="0">    
         <tr>
             <th>No</th>
@@ -58,6 +60,7 @@ $rows = query($query);
                 <td><?php echo $mhs['nim']; ?></td>
                 <td><?php echo $mhs['jurusan']; ?></td>
                 <td><?php echo $mhs['nohp']; ?></td>
+                <td><a href="hapusdata.php/?id=<?>=$mhs["id"]?> <button style = "margin-bottom: 12px; background-color: pink;"> Hapus </button></a></td>
             </tr>
         
           
